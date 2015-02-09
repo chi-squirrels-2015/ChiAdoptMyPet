@@ -1,0 +1,29 @@
+<div class="container">
+  <h1>Welcome!</h1>
+
+  <h5>Login</h5>
+
+  <form action="/users" method="get">
+    <input class="login" id="name" type="text" name="username" placeholder="Enter Username"/>
+    <input class="login" id="password" type="password" name="password" placeholder="Enter Password"/>
+    <br>
+    <input type="submit" value="Login"/>
+  </form>
+  <br><br>
+
+  <h5>Create New Account</h5>
+
+  <form action="/users" method="POST">
+    <input class="login" id="name" type="text" name="user[username]" placeholder="Enter Username"/>
+    <input class="login" id="name" type="text" name="user[name]" placeholder="Enter Name"/>
+    <input class="login" id="name" type="text" name="user[email]" placeholder="Enter Email"/>
+    <input class="login" id="name" type="text" name="user[phone]" placeholder="Enter Phone"/>
+    <br>
+    <input class="login" id="password" type="password" name="user[password]" placeholder="Enter Password"/>
+
+    <br>
+    <input type="submit" value="Create Account"/>
+  </form>
+
+
+</div>
